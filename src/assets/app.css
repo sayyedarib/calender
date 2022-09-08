@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 1, "opsz" 50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000000;
+  overflow-y: hidden;
+}
+
+nav {
+  width: 100%;
+  color: white;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 8px 30px;
+  background-color: rgb(51, 47, 47);
+}
+
+.menuToggle,
+.rightNavSmall,
+.colorMeaningSmall,
+.dateBorderSmall,
+.footerSmall,
+.headSmall,
+.barSmall,
+.smallHr,
+.dateSmall {
+  display: none;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.leftNav {
+  display: flex;
+  margin-left: 25px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.leftNav input {
+  max-width: 68px;
+  padding: 18px 13px;
+  background-color: #4d4444;
+  border: none;
+  outline: none;
+  opacity: 0.6;
+  color: white;
+}
+
+.leftNav li:last-child input {
+  opacity: 1;
+  background-color: #4d4444;
+}
+
+.leftNav li:last-child input::placeholder {
+  opacity: 1;
+  color: white;
+}
+
+.today {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todayBtn {
+  height: fit-content;
+  opacity: 1;
+  background-color: #4d4444;
+  padding: 18px 13px;
+  border: none;
+  color: white;
+}
+
+.arrowBtn {
+  display: flex;
+  gap: 5px;
+  height: 100%;
+}
+
+.arrowBtn button {
+  height: fit-content;
+  padding: 15px 5px;
+  font-size: 16px;
+  background-color: rgba(77, 68, 68, 0.4);
+  color: white;
+  border: none;
+}
+
+.month {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.navFeature {
+  display: flex;
+  margin-left: auto;
+  gap: 1rem;
+}
+
+.navFeature li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container {
+  position: relative;
+  padding-top: 80px;
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.up {
+  color: white;
+}
+
+.down {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.mid {
+  color: white;
+  display: flex;
+}
+
+.up table {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.up td {
+  padding: 4px 4px;
+}
+
+.request {
+  color: grey;
+}
+
+.left hr {
+  margin: 20px 0;
+  width: 100%;
+  background-color: white;
+}
+
+.addBtn {
+  width: 100%;
+  height: 55px;
+  background-color: aqua;
+  border-radius: 15px;
+}
+
+.dropdown {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 15px 20px;
+  justify-content: space-between;
+  gap: 0.5rem;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 600;
+  background-color: grey;
+}
+
+.requestBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  background-color: green;
+  height: 55px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.mid table {
+  margin: auto 30px;
+  border-collapse: collapse;
+}
+
+.mid td {
+  font-weight: 900;
+  padding: 30px 40px;
+  color: white;
+  border: white 1px solid;
+  border-width: 1px;
+}
+
+.delivered {
+  font-weight: 500;
+  color: green;
+}
+
+.mid {
+  border-color: green;
+}
+
+.upcoming {
+  font-weight: 600;
+  color: rgb(27, 184, 246);
+}
+
+.colorMeans {
+  display: flex;
+}
+
+.deliveredRight {
+  background-color: green;
+  border-radius: 10px;
+  width: 50px;
+  height: 8px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 40px 0;
+}
+
+.right h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right h2 span {
+  font-size: 30px;
+}
+
+.right ul {
+  font-size: 12px;
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.green {
+  background-color: rgb(0, 255, 0);
+}
+
+.red {
+  background-color: red;
+}
+
+.aqua {
+  background-color: aqua;
+}
+
+.grey {
+  background-color: grey;
+}
+
+@media only screen and (max-width: 500px) {
+  .logo,
+  .leftNav,
+  .today,
+  .navFeature li,
+  .month,
+  .dropdown,
+  .requestBtn,
+  .h1,
+  .mid,
+  .right {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  .menuToggle {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuToggle::before {
+    content: "";
+    height: 3px;
+    width: 33px;
+    background: white;
+    position: absolute;
+    transform: translateY(-13px);
+    box-shadow: 0 26px;
+  }
+
+  .menuToggle::after {
+    content: "";
+    background: white;
+    height: 3px;
+    width: 33px;
+  }
+  .navFeature {
+    align-items: center;
+  }
+  .rightNavSmall {
+    display: flex;
+  }
+
+  .dateBorderSmall {
+    display: flex;
+    background-color: black;
+    border-color: white;
+    border-radius: 6px;
+    border: 3px solid;
+    padding: 5px 8px;
+    font-weight: 700;
+  }
+
+  .container {
+    text-align: center;
+    padding-top: 65px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .up caption {
+    display: none;
+  }
+
+  .headSmall {
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+  }
+
+  .up td {
+    padding: 22px 15px;
+  }
+
+  .addBtn {
+    width: 250px;
+    height: 45px;
+    border-radius: 30px;
+  }
+
+  .left hr {
+    display: none;
+  }
+
+  .green {
+    background-color: rgb(0, 255, 0);
+  }
+
+  .barSmall {
+    display: flex;
+    width: 25px;
+    height: 4px;
+    border-radius: 5px;
+    font-weight: 300;
+  }
+
+  .addBtn {
+    height: 35px;
+    width: 65%;
+  }
+
+  .dateSmall {
+    display: flex;
+    color: white;
+  }
+
+  .footerSmall {
+    display: flex;
+    padding-top: 80px;
+    gap: 7rem;
+  }
+
+  .requestBtnSmall {
+    background: rgb(192, 191, 191);
+    height: 25px;
+    border-radius: 15px;
+    width: 120px;
+    font-weight: 600;
+  }
+
+  .iconSmall span {
+    font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 1, "opsz" 50;
+    background-color: rgb(192, 191, 191);
+    border-radius: 100%;
+  }
+
+  .deliveredSmall {
+    background: rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+  }
+
+  .upcomingSmall {
+    background: rgb(27, 184, 246);
+    color: rgb(27, 184, 246);
+  }
+
+  .notDeliveredSmall {
+    background: red;
+    color: red;
+  }
+
+  .requestSmall {
+    background: grey;
+  }
+
+  .colorMeaningSmall {
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    color: white;
+    font-size: 10px;
+  }
+
+  .colorMeaningSmall li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .smallHr {
+    display: flex;
+    width: 100%;
+    height: 0.1px;
+    background-color: white;
+  }
+}
